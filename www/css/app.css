@@ -1,0 +1,450 @@
+/**********************
+Autor: Javier Báez Monrroy
+Fecha modificación: 07/07/2018
+Hoja de estilo MPlay
+************************/
+.md .navbar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: #FF0909;
+}
+.ios .navbar{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background: #FF0909;
+}
+.navbar-inner{
+    width: 100%;
+    align-items: center;
+    top: 0px;
+}
+.title{
+    width: 100%;
+    padding: 5px;
+    text-align: center !important;
+
+}
+.demo-icon.icon-search-1{
+    float: right;
+    padding: 5px;
+}
+.demo-icon.icon-menu{
+    float: left;
+    padding: 5px;
+}
+.sign{
+    padding: 10px;
+    position: relative;
+}
+
+.in{
+    position: relative;
+    top: 30px;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.separacion{
+    background:#F90D0D;
+    width: 15%;
+    height: 5px;
+    margin: 0 42.5% 0 42.5% 
+}
+
+.datos{
+    position: relative;
+    top: 40px;
+    padding: 5px;
+}
+input{
+    height: 30px;
+    font-family: arial;
+    color: #A5A5A5;
+    font-size: 20px;
+}
+
+.texto{
+    border: 1px solid gray;
+    height: 30px;
+    margin-bottom: 20px;
+    padding: 5px;
+   
+}
+.boton{
+    background: #F90D0D;
+    width: 60%;
+    margin: 0 20% 0 20%;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    margin-top: 15px;
+}
+.easy{
+    position: relative;
+    top: 35px;
+    text-align: center;
+    margin: 0 3% 0 3%;
+    
+}
+.red{
+  background: red !important;
+}
+.caja{
+    position: relative;
+  height:30px;
+  width: 38%;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: arial;
+  float: left;
+  margin: 8px;
+}
+.titeas{
+  font-family: arial;
+  font-size: 15px;
+  padding: 10px;
+}
+.face{
+    background: #082F89;
+    font-size: 18px;    
+}
+.twitter{
+  background: #3DD1EE;
+  font-size: 18px;
+}
+.instagram{
+  background: #A13800;
+  font-size: 18px;
+}
+
+.google{
+  background: #D20505;
+  font-size: 18px;
+}
+.caja:hover{
+  opacity: 0.5;
+}
+.page-content{
+    position: relative;
+    width: 100%; 
+    margin-top: 10px;
+    padding-top: 35px !important;
+
+}
+#foto{
+    margin: 0 20% 0 20%;
+}
+#perfil{
+    border-radius: 120px;
+    margin: 25px auto;
+    width: 100%;
+}
+.slide{
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  opacity: .98;
+
+}
+.sildes{
+  margin-bottom: 80px;
+  }
+.texto01{
+  padding: 5px;
+  font-size: 14px;
+  font-family: Arial;
+  position: absolute;
+  top: 100px;
+  color: white;
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.texto02{
+  font-size: 13px;
+  font-family: Arial;
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 140px;
+  margin: 0 38% 0 38%;
+  padding: 5px;
+}
+.swiper-slide{
+  margin-bottom: 15px !important;
+  position: relative;
+  height: 240px;
+}
+.play{
+  position: relative;
+  top: 180px;
+  width: 40%;
+  background-color: #F90D0D;
+  border: 1px solid #F90D0D;
+  color: white;
+  padding: 5px;
+  margin: 0 29% 0 29%;
+  box-shadow: 2px 2px 2px #000000;
+}
+.newvideo{
+  font-size: 18px;
+  font-family: Arial;
+  padding: 15px;
+  position: relative;
+ 
+}
+.video{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.img{ 
+position: relative;   
+    width: 100%;
+    float: left;
+    margin: 0 2.5% 0 2.5%;
+}
+.personas .time{
+  position: absolute;
+  background: black;
+  color:white;
+  top: 75px;
+  right: 2px;
+  
+
+}
+.personas{
+  height: 190px;
+  width: 45%;  
+  float: left;
+  margin: 0 2.5% 0 2.5%;
+  margin-bottom: 15px;
+  position: relative; 
+}
+.personas.texto3{
+  padding: 2px;
+  font-size: 12px;
+  font-family: Arial;
+  text-align: center !important;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.personas.texto4{
+  padding: 3px;
+  font-size: 13px;
+  font-family: Arial;
+  text-align: left;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.personas .texto5{
+  padding: 3px;
+  font-size: 13px;
+  font-family: Arial;
+  text-align: left;
+  width: 100%;
+}
+.media{
+  clear: both;
+  height: 60px;
+  padding: 20px;
+  position: relative;
+  bottom: 0px;
+  background-color: #B4B4B4;
+  margin-top: 5px;
+  width: 100%;
+  
+}
+.social{
+  width: 90%;
+  margin: 0% 5% 0 5%;
+  float: left;
+}
+.demo-icon.icon-gplus-squared1{
+  background: #8C8C8C;
+  padding: 8px;
+  width: 15%;
+  float: left;
+}
+.demo-icon.icon-instagram1{
+  background: #8C8C8C;
+  padding: 8px;
+  width: 15%;
+}
+.demo-icon.icon-twitter-squared1{
+  background: #8C8C8C;
+  padding: 8px;
+  width: 15%;
+}
+.demo-icon.icon-facebook-squared1{
+  background: #8C8C8C;
+  padding: 8px;
+  width: 15%;
+}
+.menu{
+    font-size: 18px;
+    font-family: Arial;
+    width: 80%;
+    margin-bottom:15px;
+    padding: 10px;
+}
+#newcount{
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin: 0 30% 0 30%;
+}
+.caja1{
+    position: relative;
+  height:30px;
+  width: 38%;
+  text-align: center;
+  padding: 8px;
+  color: white;
+  font-size: 15px;
+  font-family: arial;
+  float: left;
+  margin: 8px;
+}
+.team1{
+  width: 45%;
+  float: left;
+  margin: 0 2.5% 0 2.5%;
+}
+.in1{
+    position: relative;
+    font-family: arial;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.fotos{
+  box-shadow: 2px 2px 2px #010101;
+}
+.img1{    
+    margin: 25px auto;
+    width: 40%;
+    float: left;
+    margin: 0 1% 0 1%;
+    margin-bottom: 21px;
+    height: 85px;
+}
+.personas1{
+  height: 80px;
+  width: 45%;  
+  float: left;
+  margin: 0 1% 0 1%;
+  margin-bottom: 30px; 
+}
+.texto31{
+  font-size: 14px;
+  font-family: Arial;
+  text-align: left;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.texto41{
+  font-size: 13px;
+  font-family: Arial;
+  text-align: left;
+  margin-bottom: 1px;
+  width: 100%;
+}
+.texto51{
+  font-size: 13px;
+  font-family: Arial;
+  text-align: left;
+  width: 100%;
+}
+.footer{
+  position: fixed;
+  bottom: 0px;
+  font-family: arial;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+  background:#F90D0D;
+  width: 100%;
+  height:20px;
+  padding: 5px;
+}
+.wrap{
+  padding: 10px;
+}
+.vid1{
+  font-size: 18px;
+  font-family: Arial;
+  text-align: center;
+  padding: 15px;
+}
+
+.videoyoutube{
+  width: 100%;
+}
+.title1{
+  font-family: Arial;
+  font-size: 18px;
+  margin-top: 15px;
+  position: relative;
+}
+.title2{
+  font-family: Arial;
+  font-size: 15px;
+  margin-top: 15px;
+  position: relative;
+}
+
+@font-face {
+      font-family: 'fontello';
+      src: url('../font/fontello.eot?33301810');
+      src: url('../font/fontello.eot?33301810#iefix') format('embedded-opentype'),
+           url('../font/fontello.woff?33301810') format('woff'),
+           url('../font/fontello.ttf?33301810') format('truetype'),
+           url('../font/fontello.svg?33301810#fontello') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+ .demo-icon
+    {
+      font-family: "fontello";
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+     
+      display: inline-block;
+      text-decoration: inherit;
+      width: 1em;
+      margin-right: .2em;
+      text-align: center;
+      /* opacity: .8; */
+     
+      /* For safety - reset parent styles, that can break glyph codes*/
+      font-variant: normal;
+      text-transform: none;
+     
+      /* fix buttons height, for twitter bootstrap */
+      line-height: 1em;
+     
+      /* Animation center compensation - margins should be symmetric */
+      /* remove if not needed */
+      margin-left: .2em;
+     
+      /* You can be more comfortable with increased icons size */
+      /* font-size: 120%; */
+     
+      /* Font smoothing. That was taken from TWBS */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+     
+      /* Uncomment for 3D effect */
+      /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+
