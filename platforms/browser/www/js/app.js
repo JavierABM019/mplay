@@ -27,7 +27,7 @@ var app = {
   email:"",
   subject:"",
   comentarios:"",
-  hostname: "http://www.oronoticias.org",
+  hostname: "http://estudhambre.com",
   urlVideo:"",
   tituloVideo:"",
   autorVideo:"",
@@ -355,7 +355,8 @@ var app = {
           var video="";
           for(x in objson.data){
             console.log(objson.data[x].titulo);
-           video = '<div class="personas"><img src="../img/images/post4.jpg" onclick="goVideo(\''+objson.data[x].titulo+'\',\''+objson.data[x].url+'\',\''+objson.data[x].imagen+'\')" class="img"><div class="time">'+objson.data[x].duracion+'</div><div class="texto3"><b>'+objson.data[x].titulo+'</b></div><div class="texto4">'+objson.data[x].autor+'</div><div class="texto5">'+objson.data[x].visitas+' Views | '+objson.data[x].fecha+'</div></div>';
+            img =app.hostname+'/mplay/img/images/'+objson.data[x].imagen;
+           video = '<div class="personas"><img src="'+img+'" onclick="goVideo(\''+objson.data[x].titulo+'\',\''+objson.data[x].url+'\',\''+objson.data[x].imagen+'\')" class="img"><div class="time">'+objson.data[x].duracion+'</div><div class="texto3"><b>'+objson.data[x].titulo+'</b></div><div class="texto4">'+objson.data[x].autor+'</div><div class="texto5">'+objson.data[x].visitas+' Views | '+objson.data[x].fecha+'</div></div>';
             $$('#content-videos').append(video)
           }
           
