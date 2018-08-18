@@ -143,6 +143,11 @@ input{
 #foto{
     margin: 0 20% 0 20%;
 }
+.nombreusuario{
+  font-family: Arial;
+  font-size: 25px;
+  text-align: center;
+}
 #perfil{
     border-radius: 120px;
     margin: 25px auto;

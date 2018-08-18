@@ -27,7 +27,7 @@ var app = {
   email:"",
   subject:"",
   comentarios:"",
-  hostname: "http://estudhambre.com",
+  hostname:"http://localhost", //"http://estudhambre.com",
   urlVideo:"",
   tituloVideo:"",
   autorVideo:"",
@@ -96,8 +96,13 @@ var app = {
           var objson= JSON.parse(data);
           if (objson.data=='Autenticado') {
             window.localStorage.setItem("autenticado", "true");
+            window.localStorage.setItem("usuario", app.usuario);
             this.autenticado=window.localStorage.getItem("autenticado");
             mainView.router.navigate('/homepages/',{animate:true});
+
+            
+
+          
           
           }else{
             app7.dialog.alert("Usuario o Password incorrecto");
@@ -115,6 +120,42 @@ var app = {
         });
       }
     },
+    getPerfil:function(){
+      var usuario1=window.localStorage.getItem("usuario");
+          app7.request({
+          url: this.hostname+'/mplay/api/perfil.php',
+          data:{usuario: usuario1},
+          method:'GET',
+         crossDomain: true,
+         success:function(data){
+          //alert(data);
+          app7.preloader.hide();
+          var objson= JSON.parse(data);
+          var none="";
+          var img="";
+          var profil="";
+          var perfil="";
+          //var usuario="";
+          for(x in objson.data){
+            //console.log(objson.data[x].imagen);
+            img =app.hostname+'/mplay/img/profil/'+objson.data[x].imagen;
+            none=app.hostname+'/mplay/img/profil/facebook.jpg';
+            console.log(usuario);
+            if (objson.data[x].imagen=="") {
+              profil= '<img src="'+none+'" id="perfil">';
+            }
+            else{
+            profil= '<img src="'+img+'" id="perfil">';
+          }
+            perfil= '<label>'+usuario1+'</label>';
+          }
+          $$('#foto').html(profil);
+          $$('#perfil1').html(perfil);
+          
+    }
+    });
+  },
+
     RegisterAccess:function(){
       console.log('sirve');
       app7.preloader.show();
@@ -205,7 +246,8 @@ var app = {
       this.comentarios=$$('#comentarios').val();
       app7.preloader.show();
       if (this.name==""||this.email==""||this.subject=="") {
-        app7.dialog.alert('Por favor llene todos los datos para poder darle seguimiento')
+        app7.dialog.alert('Por favor llene todos los datos para poder darle seguimiento');
+        app7.preloader.hide();
       }
       else{
       app7.request({
@@ -236,6 +278,10 @@ var app = {
       });
     }
   };
+    
+  
+
+  
 
 
 
@@ -246,6 +292,7 @@ var app = {
       console.log('View Home load init');
       app7.panel.allowOpen=true;
       app7.panel.enableSwipe('left');
+      app.getPerfil();
       
       var $ptrContent = app7.ptr.create('.ptr-content');
       $ptrContent.on('refresh',function(e){
@@ -273,7 +320,7 @@ var app = {
 
   
         });
-        $$('#search').val("");
+        //$$('#search').val("");
 
 
     });
@@ -420,41 +467,6 @@ var app = {
 
     });
 
-/*function searchVideo(buscar){
-        var buscar  = buscar;
-        $$('#list-search').html("");
-        app7.preloader.show();
-        app7.request({
-          url: app.hostname+'/mplay/api/search.php?buscar='+buscar,
-          method:'GET',
-         crossDomain: true,
-         success:function(data){
-          
-          app7.preloader.hide();
-          var objson= JSON.parse(data);
-          
-          var video="";
-          if (objson.data == "Videos no encontrados") {
-            app7.dialog.alert("No se encontraron resultados")
-          }else{
-
-          for(x in objson.data){
-            console.log(objson.data[x].titulo);
-            video = '<li><a href="#" class="item-link item-content"><div class="item-media"><img src="../img/images/card1.jpg" width="80"/></div><div class="item-inner"><div class="item-title-row"><div class="item-title">'+objson.data[x].titulo+'</div></div><div class="item-subtitle">'+objson.data[x].autor+'</div><div class="item-text">'+objson.data[x].duracion+' / '+objson.data[x].visitas+' Visitas / '+objson.data[x].fecha+'</div></div></a></li>';
-            $$('#list-search').append(video);
-
-          }
-
-          }
-         },
-         error:function(error){
-          app7.preloader.hide();
-          app7.dialog.alert("Hubo un error, por favor intente otra vez");
-          console.log(error);
-         }
-
-       });
-  }*/
 
 
   
